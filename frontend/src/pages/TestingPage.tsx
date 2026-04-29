@@ -102,7 +102,7 @@ export default function TestingPage() {
             const data: ParkingArea[] = await response.json();
             setAreas(data);
 
-            const gym7 = data.find((item) => item.name === "GYM 7" || item.name === "GYM-7");
+            const gym7 = data.find((item) => item.name === "หลังยิม7" || item.name === "GYM 7" || item.name === "GYM-7");
             if (gym7) {
                 setAreaId(gym7.id);
             } else if (data[0]) {
