@@ -20,20 +20,20 @@ export default function Layout({ children }: { children: ReactNode }) {
                         <Link
                             to="/"
                             className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === "/"
-                                    ? "bg-slate-900 text-white"
-                                    : "text-slate-600 hover:bg-slate-100"
+                                ? "bg-slate-900 text-white"
+                                : "text-slate-600 hover:bg-slate-100"
                                 }`}
                         >
-                            Dashboard
+                            Home
                         </Link>
                         <Link
                             to="/test"
                             className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === "/test"
-                                    ? "bg-sky-600 text-white"
-                                    : "text-slate-600 hover:bg-sky-50 hover:text-sky-700"
+                                ? "bg-sky-600 text-white"
+                                : "text-slate-600 hover:bg-sky-50 hover:text-sky-700"
                                 }`}
                         >
-                            Testing
+                            Admin
                         </Link>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
             {!isHome && (
                 <footer className="mt-auto py-6 text-center text-xs font-medium text-gray-400">
-                    © 2026 Thammasat University
+                    © 2026 G07 TUรู้พิกัด
                 </footer>
             )}
         </div>
