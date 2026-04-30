@@ -306,7 +306,7 @@ export default function TestingPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_#e0f2fe,_transparent_32%),linear-gradient(180deg,#f8fafc_0%,#eef2ff_100%)] px-4 py-8 md:px-8">
+        <div className="min-h-screen bg-transparent px-4 py-8 md:px-8">
             <div className="mx-auto flex max-w-7xl flex-col gap-6">
                 <section className="rounded-[32px] border border-white/70 bg-white/85 p-6 shadow-xl shadow-slate-200/60 backdrop-blur md:p-8">
                     <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">

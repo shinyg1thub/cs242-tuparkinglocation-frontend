@@ -80,7 +80,7 @@ export default function ParkingDetail() {
 
     if (loading) {
         return (
-            <div className="h-[70vh] flex flex-col items-center justify-center bg-[#f8fafc]">
+            <div className="h-[70vh] flex flex-col items-center justify-center bg-transparent">
                 <div className="w-12 h-12 rounded-full border-4 border-gray-200 border-t-emerald-500 animate-spin mb-4" />
                 <span className="text-gray-500 font-medium">Loading details...</span>
             </div>
@@ -107,7 +107,7 @@ export default function ParkingDetail() {
     const hasCoords = !!(area.latitude && area.longitude);
 
     return (
-        <div className="bg-[#f8fafc] min-h-screen pb-20">
+        <div className="bg-transparent min-h-screen pb-20">
             {/* ── Sticky Header ── */}
             <div className="bg-white border-b sticky top-16 z-40 px-4 py-4 md:px-8 shadow-sm">
                 <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">

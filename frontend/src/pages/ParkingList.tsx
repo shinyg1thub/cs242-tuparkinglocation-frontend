@@ -155,7 +155,7 @@ export default function ParkingList() {
         FILTER_OPTIONS.find((f) => f.value === activeFilter) ?? FILTER_OPTIONS[0];
 
     return (
-        <div className="flex flex-col h-full bg-[#f8fafc]">
+        <div className="flex flex-col h-full bg-transparent">
             {/* ── Map ── */}
             <div className="w-full h-[40vh] md:h-[50vh] relative z-0 shrink-0">
                 <MapContainer
@@ -214,7 +214,7 @@ export default function ParkingList() {
                 </MapContainer>
 
                 {/* Gradient fade at bottom of map */}
-                <div className="absolute bottom-0 w-full h-8 bg-gradient-to-t from-[#f8fafc] to-transparent z-[400] pointer-events-none" />
+                <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-[#f8fafc] via-[#f8fafc]/50 to-transparent z-[400] pointer-events-none" />
             </div>
 
             {/* ── Content Section ── */}

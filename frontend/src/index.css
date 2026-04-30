@@ -12,7 +12,9 @@
 @layer base {
     body {
         font-family: 'Inter', system-ui, sans-serif;
-        background-color: #f8fafc;
+        background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
         -webkit-tap-highlight-color: transparent;
     }
 }
